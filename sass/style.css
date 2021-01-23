@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500;1,800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  background-color: F9F9F9;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+nav a {
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: black;
+  margin: 5px auto;
+}
+
+nav a:hover {
+  color: #36ff87;
+}
+
+#logo {
+  width: 7em;
+}
+
+#nav-item {
+  padding-top: 0.8em;
+}
+
+#cart {
+  width: 3em;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1%;
+}
+
+.New-order {
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 25px #f0608d;
+          box-shadow: 0px 4px 25px #f0608d;
+  border-radius: 72px;
+  margin-left: 25px;
+  margin-top: 3%;
+}
+
+.New-order .data {
+  float: right;
+  margin-right: 10%;
+  background-color: blue;
+}
+
+.New-order #ref,
+.New-order #prix,
+.New-order #qte {
+  width: 191px;
+  height: 47px;
+  background: #f3f3f3;
+  border-radius: 28px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 5%;
+  color: #000000;
+}
+
+.New-order #ajouter {
+  background: #36ff87;
+  border-radius: 28px;
+  font-family: Poppins;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 20px;
+  width: 100px;
+  height: 60px;
+  margin-top: 15%;
+  margin-left: 35%;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.orderDetails {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+}
+
+label {
+  font-family: Poppins;
+  font-style: normal;
+  font-size: 20px;
+  margin-top: 10%;
+  color: #000000;
+  padding-left: 1em;
+}
+
+.total label {
+  font-family: Poppins;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 45px;
+  line-height: 67px;
+  color: #f0608d;
+  margin-left: -5%;
+  text-align: center;
+}
+
+.total #total {
+  width: 191px;
+  background: #f3f3f3;
+  border-radius: 28px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  margin-left: 10%;
+  margin-top: 10px;
+  padding-inline: 5px;
+}
+/*# sourceMappingURL=style.css.map */

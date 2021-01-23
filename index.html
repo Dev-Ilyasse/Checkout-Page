@@ -9,28 +9,58 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="sass/style.css" />
     <title>Panier</title>
 </head>
 
 <body>
-    <div class="panier">
-        <table class="table" id="table">
-            <thead class="table-dark">
-                <tr>
-                    <th>Ref</th>
-                    <th>Prix</th>
-                    <th>Quantite</th>
-                    <th>Total</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>cmd(1)</td>
-                </tr>
-            </tbody>
-        </table>
+    <!--NAVBAR MENU-->
+    <nav class="nav justify-content-center">
+        <a class="nav-link" href="#"><img src="images/Logo.svg" alt="logo" id="logo" /></a>
+        <a class="nav-link" href="#" id="nav-item">PRODUCT</a>
+        <a class="nav-link" href="#" id="nav-item">COLLECTION</a>
+        <a class="nav-link" href="#" id="nav-item">ABOUT US</a>
+        <a class="nav-link" href="#"><img src="images/cart.svg" alt="cart" id="cart" /></a>
+    </nav>
+
+    <div class="container">
+        <div class="orderDetails">
+            <table class="table table-responsive caption-top table-sm  text-center" id="table">
+                <caption>
+                    Votre Commande
+                </caption>
+                <thead class="table-dark">
+                    <tr>
+                        <th>Ref</th>
+                        <th>Prix</th>
+                        <th>Quantite</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--data will load from app.js-->
+                </tbody>
+            </table>
+            <div class="total">
+                <label> Total</label>
+                <label id="total"></label>
+            </div>
+        </div>
+
+        <div class="New-order">
+            <label>Référence :</label>
+            <input id="ref" type="text" class="data" />
+            <br><br><br>
+            <label>Prix :</label>
+            <input id="prix" type="text" class="data" />
+            <br><br><br>
+            <label>Quantité :</label>
+            <input id="qte" type="text" class="data" />
+            <br><br><br>
+            <input id="ajouter" type="button" value="Ajouter" onclick="addNewProduct()" />
+        </div>
     </div>
-    <script src="app.js"></script>
+    <script src="app.js" onload="fillPanier()"></script>
 </body>
 
 </html>
